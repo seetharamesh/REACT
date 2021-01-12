@@ -66,12 +66,12 @@ class Receipt extends React.Component{
 }//end of Receipt class
 
 class App extends React.Component{
-  constructor(props){
-    super(props)
-  this.state =  {
+  // constructor(props){
+  //   super(props)
+  state =  {
     receipts:receipts
   };//state is a JS object
-}
+// }
 //using array to store receipts and map to render the component based on conditional operation
   render(){
     return(

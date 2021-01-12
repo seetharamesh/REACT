@@ -69,14 +69,14 @@ class Receipt extends React.Component{
 }//end of Receipt class
 
 class App extends React.Component{
-  constructor(props){
-    super(props)
-  this.state =  {
+  // constructor(props){
+  //   super(props)
+  state =  {
     receipt1:receipt1,
     receipt2:receipt2,
     receipt3:receipt3
   };//state is a JS object
-}
+// }
 //use conditional rendering by using ternary operator
   render(){
     return(
