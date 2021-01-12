@@ -1,0 +1,15 @@
+
+html {
+  background: white;
+}
+
+.receipt{
+  border-style: solid;
+  border-color: orange;
+  width:25%;
+  height:100%;
+  padding-left: 10px;
+  margin-top: 25px;
+  margin-left:50px;
+  display:inline-block;
+}
