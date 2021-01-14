@@ -1,41 +1,16 @@
 class DivTwo extends React.Component {
-  state = {
-  tardis: {
-  name: 'Time and Relative Dimension in Space',
-  caps: false,
-}
-}
-
-  changeIt = (text) => {
-  if (this.state.tardis.caps) {
-    this.setState({
-      tardis: {
-        name: text.toLowerCase(),
-        caps: false
-      }
-    })
-  } else {
-    this.setState({
-      tardis: {
-        name: text.toUpperCase(),
-        caps: true
-      }
-    })
-  }
-}
 
     render() {
       console.log("inside DivTwo");
+      console.log(this.props.name);
+      //according to assignment requirement we are passing called DivThree twice
         return (
           <div id="divtwo">
-          <DivThree passingProp1 = {this.state.tardis} passingProp2={this.changeIt}/>
-          <DivThree passingProp1 = {this.state.tardis} passingProp2={this.changeIt}/>
+          <DivThree passingProp1 = {this.props.name} passingProp2={this.props.changeIt}/>
+          <DivThree passingProp1 = {this.props.name} passingProp2={this.props.changeIt}/>
 
           </div>
 
-          // <div id="divtwo">
-          //     <h3 onClick={() => this.changeIt(this.state.tardis.name)}> {this.state.tardis.name}</h3>
-          // </div>
         )
     }
 }

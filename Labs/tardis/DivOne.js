@@ -1,38 +1,11 @@
 class DivOne extends React.Component {
-  state = {
-  tardis: {
-  name: 'Time and Relative Dimension in Space',
-  caps: false,
-}
-}
-
-  changeIt = (text) => {
-  if (this.state.tardis.caps) {
-    this.setState({
-      tardis: {
-        name: text.toLowerCase(),
-        caps: false
-      }
-    })
-  } else {
-    this.setState({
-      tardis: {
-        name: text.toUpperCase(),
-        caps: true
-      }
-    })
-  }
-}
-
-    render() {
+      render() {
       console.log("inside DivOne");
+      console.log(this.props.name);
         return (
           <div id="divone">
-          <DivTwo passingProp1 = {this.state.tardis} passingProp2={this.changeIt}/>
+          <DivTwo passingProp1 = {this.props.name} passingProp2={this.props.changeIt}/>
           </div>
-          // <div id="divone">
-          //     <h3 onClick={() => this.changeIt(this.state.tardis.name)}> {this.state.tardis.name}</h3>
-          // </div>
         )
     }
 }
