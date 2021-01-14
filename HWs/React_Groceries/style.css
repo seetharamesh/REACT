@@ -1,0 +1,28 @@
+
+body {
+ /* background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20201126/pngtree-simple-ripe-apple-red-apple-one-apple-on-white-background-image_498394.jpg"); */
+background-image: url("https://s3.amazonaws.com/html5.powershow.com/7472096/data/img1.png");
+
+ color: rgb(9, 78, 10);
+}
+
+.groceriesApp{
+  /* border-style: solid;
+  border-color: red; */
+  width:25%;
+  height:100%;
+  padding: 20px;
+  margin-top: 0%;
+  margin-left:40%;
+  display:inline-block;
+  text-align: left;
+}
+h1{
+  font-size: 25px;
+  text-align: center;
+  color:darkgreen;
+}
+label{
+  font-weight: bold;
+  color:gold;
+}
