@@ -25,7 +25,9 @@ if (this.state.tardis.caps) {
 
   render(){
     console.log("passing props to DivOne");
-    console.log(this.state.tardis.name);
+    console.log(this.state.tardis);
+    console.log("passing the changeIt method as a prop below")
+    console.log("inside app")
     return(
       <div id="appcomponent">
       <DivOne passingProp1 = {this.state.tardis.name} passingProp2={this.changeIt}/>
