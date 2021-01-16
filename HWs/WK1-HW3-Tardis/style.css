@@ -1,0 +1,46 @@
+
+html {
+  background: darkgreen;
+}
+
+#root{
+  background-color: blue;
+}
+
+#appcomponent{
+  background-color:orange;
+}
+
+#divone{
+  background-color:pink;
+}
+
+#divtwo{
+  background-color:lightgreen;
+}
+
+#divthree{
+  background-color: lightblue;
+  color:black;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  margin: 1em;
+  padding: 1em;
+  font-family: 'Poppins', sans-serif;
+  background: #FEFFE9;
+  text-align: center;
+  background-color: black;
+}
+
+
+div{
+  margin: auto;
+  width: 80%;
+  box-shadow: 0 0 8px dodgerblue;
+  padding: 1em;
+  background: white;
+}
