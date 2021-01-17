@@ -23,17 +23,9 @@ class App extends React.Component {
       )
     }
 
-   //this method is used to toggle the state of showHideAnswer. It can be passed with
-   // any string (here we are passing a string "showHideAnswer" from render). The reason we are passing
-   // is to use the switch case statement. The switch statement will toggle the state of showHideAnswer from true to false and false to true
-    hideAnswer(ans) {
-    switch (ans) {
-      case "showHideAnswer":
+   //this method is used to toggle the state of showHideAnswer.
+    showHideAnswer() {
         this.setState({ showHideAnswer: !this.state.showHideAnswer });
-        break;
-      default:
-        null;
-    }
   }
 
   //this method will manually increase the score based on the question's value points.
@@ -62,8 +54,7 @@ class App extends React.Component {
   //this method will reset the score to zero
    reset(){
      console.log("reset");
-     console.log(this.setState({
-       score: 0}));
+     this.setState({score: 0});
      }
 
 
@@ -88,7 +79,7 @@ class App extends React.Component {
             <div className="question">{question}</div><br />
             <div><label className="category" htmlFor='category'>Category: {title}</label></div><br />
             <div><label className="point" htmlFor='point'>Point: {point}</label></div><br /><br />
-            <button className="button5" onClick={() => this.hideAnswer("showHideAnswer")}>Answer</button><br /><br />
+            <button className="button5" onClick={() => this.showHideAnswer()}>Answer</button><br /><br />
             {showHideAnswer && (<div className="answer">{answer}</div> )}
             </div>
         )
