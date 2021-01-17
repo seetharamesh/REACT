@@ -68,8 +68,9 @@ class App extends React.Component {
 
 
     render() {
-      //another way to write this is: const {showHideAnswer} = this.state
-      const  showHideAnswer = this.state.showHideAnswer;
+      //another way to write this: const {showHideAnswer} = this.state :is
+      //const  showHideAnswer = this.state.showHideAnswer;
+      const {showHideAnswer} = this.state;
       const question = (this.state.question.map(question => (question.question)));
       const title = (this.state.question.map(title => (title.category.title)));
       const point = (this.state.question.map(point => (point.value)));
