@@ -1,13 +1,10 @@
 class App extends React.Component {
 
-  constructor(props){
-    super(props)
-    this.state = {
+    state = {
         baseURL: 'http://jservice.io/api/random',
         question:[],
         showHideAnswer:false,
         score:0
-    }
   }
 
   //this method fetches questions from API as json objects. We are using the API's random question option as in the base url above.
@@ -54,7 +51,9 @@ class App extends React.Component {
   //this method will reset the score to zero
    reset(){
      console.log("reset");
-     this.setState({score: 0});
+     this.setState({score: 0,
+                    question:[],
+                    showHideAnswer:false});
      }
 
 
