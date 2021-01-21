@@ -7,7 +7,7 @@ import NewGameButton from '../../components/NewGameButton/NewGameButton';
 import { Link } from 'react-router-dom';
 
 const GamePage = (props) => {
-    
+
     return (
       <div className="App">
 
@@ -26,6 +26,7 @@ const GamePage = (props) => {
             />
             <GameTimer />
             <Link className='btn btn-default' to='/settings'> Difficulty </Link>
+            <button className='btn btn-default' onClick={props.toggleInstructions}>How To Play</button>
             <NewGameButton handleNewGameClick={props.handleNewGameClick}/>
           </div>
         </div>
